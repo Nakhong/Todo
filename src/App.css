@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Nanum+Pen+Script&family=Yeon+Sung&display=swap");
+
+body {
+  background-color: #f6f6f6;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Nanum Pen Script";
+  min-height: 100vh;
+}
+
+button {
+  font-family: "Nanum Pen Script";
+  text-align: center;
+  line-height: 16px;
+  font-size: 18px;
+  white-space: nowrap;
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
+  color: white;
+}
+.godiary {
+  position: fixed;
+  bottom: 10%;
+  right: 30px;
+}
+.godiary {
+  border: none;
+  background-color: #64c964;
+  border-radius: 30%;
+  margin-top: 10px;
+  height: 50px;
+}
+#root {
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.MyButton {
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  font-size: 18px;
+
+  white-space: nowrap;
+  font-family: "Nanum Pen Script";
+}
+
+.MyButton_default {
+  background-color: #ececec;
+  color: black;
+}
+.MyButton_positive {
+  background-color: #64c964;
+  color: white;
+}
+
+.MyButton_negative {
+  background-color: #fd565f;
+  color: white;
+}
+
+/* 650이상일때 */
+@media (min-width: 650px) {
+  .App {
+    width: 640px;
+  }
+}
+
+.App {
+  min-height: 100vh;
+}
+
+/*MyHeader*/
+.myheader {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*ListPlus*/
+.ListPlus {
+  display: flex;
+  justify-content: center;
+}
+.ListPlus input {
+  border-radius: 5px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border: 1px solid #ccc;
+  border-right: none;
+  font-size: 18px;
+  padding: 5px;
+  width: 400px;
+  outline: none;
+  box-sizing: border-box;
+  height: 35px;
+}
+.ListPlus button {
+  width: 80px;
+  border-radius: 5px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border: 1px solid #ccc;
+  border-left: none;
+  background-color: #64c964;
+  box-sizing: border-box;
+  height: 35px;
+}
+.ListPlus button:hover {
+  background-color: #64c964;
+}
+
+/*Lists*/
+.Lists {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.Lists img {
+  margin-top: 50px;
+  width: 480px;
+  height: 480px;
+}
+
+.allClear {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 18px;
+  border-radius: 5px;
+  color: white;
+  width: 150px;
+  height: 30px;
+  border: none;
+  outline: none;
+  background-color: rgb(54, 54, 54);
+}
+.allClear:hover {
+  background-color: rgb(0, 0, 0);
+}
+
+/*ListItem*/
+.info {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.info span {
+  width: 100%;
+  font-size: 20px;
+  text-align: left;
+}
+.info_btns {
+  margin-left: 8px;
+  display: flex;
+}
+.info button {
+  border: none;
+  width: 80px;
+  height: 30px;
+}
+
+.checkBtn {
+  border-radius: 5px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  background-color: rgb(34, 249, 190);
+}
+.checkBtn:hover {
+  background-color: rgb(32, 223, 172);
+}
+.deleteBtn {
+  border-radius: 5px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  background-color: rgb(248, 20, 21);
+}
+.deleteBtn:hover {
+  background-color: rgb(218, 18, 18);
+}
+
+.noneLine {
+  text-decoration: none;
+  color: black;
+}
+.checkLine {
+  text-decoration: line-through;
+  color: #ccc;
+}
+
+/* 650미만일때 */
+@media (max-width: 650px) {
+  .App {
+    width: 90vw;
+  }
+  button {
+    line-height: 13px;
+    font-size: 13px;
+  }
+  .ListPlus input {
+    width: 300px;
+  }
+  .Lists img {
+    width: 300px;
+    height: 300px;
+  }
+}
